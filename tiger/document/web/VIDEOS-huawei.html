@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/css/puplic.css"/>
+    <link rel="stylesheet" href="static/css/All-in.css"/>
+    <link rel="stylesheet" href="static/css/font-awesome.css"/>
+    <script src="static/js/jquery-2.2.1.min.js"></script>
+    <script src="static/js/Index.js"></script>
+
+    <title>VIDEOS</title>
+
+    <style type="text/css">
+        .rollBox .LeftBotton{
+            height:52px;
+            margin-right: 20px;
+        }
+        .rollBox .RightBotton{
+            height:52px;
+            margin-left: 20px;
+        }
+        .btn{
+            width: 50px;
+            margin-top: 30px;
+            cursor:pointer;
+            font-size: 60px;
+            color: #C3C3C3;
+            overflow:hidden;float:left;display:inline;
+        }
+        .rollBox .Cont{width:530px;overflow:hidden;float:left;}
+        .rollBox .ScrCont{width:10000000px;}
+        .rollBox .Cont .pic{width:142px;float:left;text-align:center;}
+        .rollBox .Cont .pic img{
+            width: 130px;
+            height: 100px;
+            margin-top: 10px;
+            display:block;
+            cursor: pointer;
+        }
+        .rollBox .Cont .pic p{line-height:26px;color:#505050;}
+    </style>
+</head>
+<body>
+
+
+<!--顶部-->
+<!--<iframe src="top.html"  frameborder="0" scrolling="no" width="100%" height="40px"></iframe>-->
+
+
+<!--顶部-->
+<div class="top">
+    <div style="" class="main top-main clear">
+        <div class="top-right">
+            <a href="Index.html">返回首页</a>
+            <select onchange="window.location=this.value">
+                <option value="Index.html">分校区</option>
+                <option value="Index-fenxiao.html">扬州校区</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<!--导航-->
+<nav>
+    <div class="main clear" >
+        <img src="static/img/logo.png" alt="" id="logo"/>
+        <ul class="clear" id="nav">
+            <li class= active"><a href="US.html">Us</a></li>
+            <li><a href="YOU.html">You</a></li>
+            <li><a href="NEWS.html">News</a></li>
+            <li><a href="VIDEOS.html" >Videos</a></li>
+
+        </ul>
+    </div>
+</nav>
+
+
+
+
+<!--中间-->
+<div class="main">
+    <div id="middle" >
+        <div class="middle-1">
+            <div class="border"></div>
+            <div class="main top-main clear">
+                <ul id="us-ul">
+                    <li class="bar1-li bar1-li1"><a href="US.html">关于我们</a></li>
+                    <li class="bar1-li bar1-li2"><a href="US-course.html">我们的课程</a></li>
+                    <li class="bar1-li bar1-li3"><a href="US-envir.html">教学环境</a></li>
+                    <li class="bar1-li bar1-li4"><a href="US-advantage.html">我们的优势</a></li>
+                </ul>
+                <div class="pic-text clear">
+                    <div class="pic-detail"><a href="US.html">
+                        <img src="static/img/US-about.png" alt=""/>
+                        <h2>关于我们</h2>
+                        <p>南京太阁IT认证中心成立于2010年12月，是一家思科授权培训机构，是南京航空航天大学官方指定合作伙伴，拥有百万思科实验设备...</p>
+                    </a>
+                    </div>
+                    <div class="pic-detail"><a href="US-advantage.html">
+                        <img src="static/img/US-good.png" alt=""/>
+                        <h2>我们的优势</h2>
+                        <p>优越的地理位置，提供免费住宿，学费可分期，就业推荐资源丰富，可在线远程授课</p>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle-1" >
+            <div class="border"></div>
+            <div class="main top-main clear">
+                <ul id="you-ul">
+                    <li><a href="YOU.html">免费课申请</a></li>
+                    <li><a href="YOU-text.html">考试须知</a></li>
+                    <li><a href="YOU-mode.html">上课方式</a></li>
+                </ul>
+                <div class="pic-text clear">
+                    <div class="pic-detail"><a href="YOU-text.html">
+                        <img src="static/img/YOU-text.png" alt=""/>
+                        <h2>考试须知</h2>
+                        <p> 报考时考生需提供考生中英文姓名，E-MAIL地址，中英文联系地址及邮编，联系电话和考试号码，名称及考试语种；非首次考试的考生还应再</p>
+                    </a>
+                    </div>
+                    <div class="pic-detail"><a href="YOU-mode.html">
+                        <img src="static/img/YOU-mode.png" alt=""/>
+                        <h2>上课方式</h2>
+                        <p>本地，远程，集训营班，直通车班，视频班</p>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle-1">
+            <div class="border"></div>
+            <div class="main top-main clear">
+                <ul id="news-ul">
+                    <li><a href="NEWS-battlefield.html">最新战报</a></li>
+                    <li><a href="NEWS.html">最新开班</a></li>
+                    <li><a href="NEWS-discount.html">最新优惠</a></li>
+                </ul>
+                <div class="pic-text clear">
+                    <div class="pic-detail"><a href="NEWS-battlefield.html">
+                        <img src="static/img/NEW-pic.png" alt=""/>
+                        <h2>最新战报</h2>
+                        <p>热烈庆祝太阁优秀学员白雷2016年6月19日于KongKong顺利Pass CCIE DC #53215后续小伙伴加油！</p>
+                    </a>
+                    </div>
+                    <div class="pic-detail">
+                        <a href="NEWS.html">
+                            <img src="static/img/NEW-class.png" alt=""/>
+                            <h2>最新开班</h2>
+                            <p>太阁闫辉HNCA腾讯课堂8月13日周六下午首次免费开课</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle-1">
+            <div class="border"></div>
+            <div class="main top-main clear">
+                <ul id="videos-ul">
+                    <li><a href="VIDEOS.html">思科课程试听</a></li>
+                    <li><a href="VIDEOS.html">华为课程试听</a></li>
+                </ul>
+                <div class="pic-text clear">
+                    <div class="pic-detail"> <a href="VIDEOS.html">
+                        <img src="static/img/VIDEOS-listion.png" alt=""/>
+                        <h2>思科课程试听</h2>
+                    </a>
+                    </div>
+                    <div class="pic-detail"><a href="VIDEOS-huawei.html">
+                        <img src="static/img/VIDEOS-student.png" alt=""/>
+                        <h2>华为课程试听</h2>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---->
+<img src="static/img/VIDEOS-bg.png" alt="" width="100%" class="img"/>
+<div class="main places">当前位置：首页>VIDEOS>试听</div>
+<!--内容-->
+<div class="content">
+    <div class="main clear">
+        <div class="nav-bar">
+            <ul class="bar1">
+                <li class="title-li">VIDEOS <i class="icon-reorder"></i></li>
+                <li class="bar1-li"><a href="VIDEOS.html">思科课程试听 <i class="icon-angle-right"></i></a> </li>
+                <li class="active bar1-li"><a href="VIDEOS-huawei.html">华为课程试听  <i class="icon-angle-right"></i></a>  </li>
+            </ul>
+            <ul class="bar2">
+                <li class="active bar2-bg1"><a href="tencent://message/?uin=125439857">在线咨询</a></li>
+                <li class="bar2-bg2"><a href="YOU.html">免费课申请</a></li>
+                <li class="bar2-bg3"><a href="VIDEOS.html">视频试听</a></li>
+            </ul>
+        </div>
+        <!--右边部分 -->
+        <div class="right-con">
+            <!--思科课程试听-->
+            <div id="article3" class="new-class">
+                <h2 style="margin-bottom: 0">华为课程试听</h2>
+                <!--上面-->
+                <div class="videos clear">
+                    <!--上面左边-->
+                    <div class="videos-text">
+                        <strong>华为讲师2014最新CCNAv2.0至强版课程29</strong>
+                        <div class="border"></div>
+                        <p>华为讲师2014最新CCNAv2.0至强版课程29</p>
+                    </div>
+                    <!--上面右边-->
+                    <div class="audio-visual">
+                        <video  autoplay="true" controls="controls" loop="true" >
+                            <source src="static/video/BigBuckBunny_640x360.mp4" type="video/mp4"/>
+                            <source src="static/video/BigBuckBunny_640x360.ogv" type="video/ogg"/>
+                        </video>
+                    </div>
+                </div>
+                <!--下面-->
+                <div align="center">
+
+                    <!----------代码开始------------>
+                    <div class="rollBox clear">
+                        <div class="LeftBotton  btn icon-angle-left" onmousedown="ISL_GoUp()" onmouseup="ISL_StopUp()" onmouseout="ISL_StopUp()"></div>
+                        <div class="Cont" id="ISL_Cont">
+                            <div class="ScrCont">
+                                <div id="List1">
+                                    <!-- 图片列表 begin -->
+                                    <div class="pic">
+                                        <img src="static/img/videos1.png" />
+                                        <p><a href="" target="_blank">课程</a></p>
+                                    </div>
+
+                                    <div class="pic">
+                                        <img src="static/img/videos2.png"  />
+                                        <p><a href="" target="_blank">课程</a></p>
+                                    </div>
+                                    <div class="pic">
+                                        <img src="static/img/videos1.png" />
+                                        <p><a href="" target="_blank">课程</a></p>
+                                    </div>
+                                    <div class="pic">
+                                        <img src="static/img/videos2.png"/>
+                                        <p><a href="" target="_blank">课程</a></p>
+                                    </div>
+                                    <div class="pic">
+                                        <img src="static/img/videos1.png" />
+                                        <p><a href="" target="_blank">课程</a></p>
+                                    </div>
+                                    <div class="pic">
+                                        <img src="static/img/videos2.png" />
+                                        <p><a href="" target="_blank">课程</a></p>
+                                    </div>
+                                    <div class="pic">
+                                        <img src="static/img/videos1.png" />
+                                        <p><a href="" target="_blank">课程</a></p>
+                                    </div>
+                                    <!-- 图片列表 end -->
+
+                                </div>
+                                <div id="List2"></div>
+                            </div>
+                        </div>
+                        <div class="RightBotton btn icon-angle-right" onmousedown="ISL_GoDown()" onmouseup="ISL_StopDown()" onmouseout="ISL_StopDown()"></div>
+                    </div>
+                </div>
+                <script src="static/js/page-img.js"></script>        <!-- 必须放这里 -->
+            </div>
+
+
+
+            <iframe src="page.html"  frameborder="0" scrolling="no" width="700px" height="40px;"style="margin-top: 20px"></iframe>
+        </div>      <!-- right-con 闭合div -->
+    </div>   <!-- main 闭合div -->
+</div>
+
+<!--广告-->
+<iframe src="QQ-advertise.html"  frameborder="0" scrolling="no" width="400px" id="ad"></iframe>
+<!--底部-->
+<iframe src="footer.html"  frameborder="0" scrolling="no" width="100%" height="180px"></iframe>
+</body>
+</html>

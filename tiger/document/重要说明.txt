@@ -1,0 +1,24 @@
+﻿运行前要将lib文件夹的sina.jar和ojdbc7.jar安装到本地Maven仓库
+执行命令：
+mvn install:install-file -Dfile=sina.jar -DgroupId=core -DartifactId=sina -Dversion=2.5.0 -Dpackaging=jar -DgeneratePom=true -DcreateChecksum=true
+mvn install:install-file -Dfile=ojdbc7.jar -DgroupId=com.oracle -DartifactId=ojdbc7 -Dversion=12.1.0.1.0 -Dpackaging=jar -DgeneratePom=true -DcreateChecksum=true
+mvn install:install-file -Dfile=alipaySdk-20160223.jar -DgroupId=com.alipay -DartifactId=alipay -Dversion=2016.02.23 -Dpackaging=jar -DgeneratePom=true -DcreateChecksum=true
+
+		<dependency>
+			<groupId>core</groupId>
+			<artifactId>sina</artifactId>
+			<version>2.5.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc7</artifactId>tr
+			<version>12.1.0.1.0</version>
+		</dependency>
+		<dependency>
+        	<groupId>com.alipay</groupId>
+        	<artifactId>alipay</artifactId>
+        	<version>2016.02.23</version>
+        </dependency>
+
+

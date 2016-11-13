@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{margin: 0;padding: 0;font-family: "微软雅黑"}
+        h2{font-weight: normal}
+        a{color: #000;text-decoration: none}
+        .clear{zoom:1}
+        .clear:after{content: '';display: block;clear: both}
+        /**/
+        .advertise{
+            width: 340px;
+            /*height: 180px;*/
+            border: 1px solid #848587;
+            border-radius: 2px;
+
+        }
+        .advertise .title{
+            height: 30px;
+            background: #7CC1F0;
+            padding-left: 26px;
+        }
+        .title .img{
+            float: right;
+            /*border: 1px solid red;*/
+            margin-right: 12px;
+            width: 50px;
+            height: 24px;
+            text-align: center;
+            border-left: 1px solid #75AED6;
+            border-right: 1px solid #75AED6;
+        }
+        .title .img:hover{
+            background: #E81123;
+        }
+        .con{
+            height: 126px;
+            background: -webkit-linear-gradient(right, #E7F0F8, #FDFEFF);
+            /* Firefox 3.6+ */
+            background: -moz-linear-gradient(right, #E7F0F8, #FDFEFF);
+            /* Opera 11.10+ */
+            background: -o-linear-gradient(right, #E7F0F8, #FDFEFF);
+            /* IE 10 */
+            background: -ms-linear-gradient(right, #E7F0F8, #FDFEFF);
+        }
+        .con img{
+            float: left;
+            margin: 20px 10px 0 20px;
+            border: 1px solid #DADCDE;
+        }
+        .con .text{
+            float: left;
+            padding: 20px;
+            color: #2C527C;
+        }
+        .con .text p{
+            line-height: 34px;
+            font-size: 18px;
+        }
+        .con .text span{
+            font-size: 14px;
+        }
+        .bottom{
+            background: #CADDEA;
+            height: 30px;
+        }
+        .bottom span{
+            float: right;
+            font-size: 14px;
+            border: 1px solid #556A7B;
+            padding: 2px 6px;
+            margin-top: 2px;
+            margin-right: 4px;
+            border-radius: 4px;
+            cursor: pointer;
+            background: -webkit-linear-gradient(top, #E2EDF5, #CDDFEE);
+            /* Firefox 3.6+ */
+            background: -moz-linear-gradient(top, #E2EDF5, #CDDFEE);
+            /* Opera 11.10+ */
+            background: -o-linear-gradient(top, #E2EDF5, #CDDFEE);
+            /* IE 10 */
+            background: -ms-linear-gradient(top, #E2EDF5, #CDDFEE);
+        }
+        .bottom span:hover{
+            border: 1px solid #5BBBF4;
+        }
+    </style>
+</head>
+<body>
+
+<div class="advertise">
+    <div class="title">太阁IT认证 <span class="img close"><img src="static/img/close.png" alt="" /></span></div>
+    <div class="con clear">
+        <img src="static/img/QQ-ad.png" alt=""/>
+        <div class="text">
+            <h2>免费在线咨询</h2>
+            <p>CCIE咨询直接留言</p>
+            <span>工作时间：10:00-22:00</span>
+        </div>
+    </div>
+    <div class="bottom clear">
+        <span class="close">下次再说</span>
+        <span> <a href="tencent://message/?uin=125439857" id="bay_window">QQ交谈</a></span>
+    </div>
+</div>
+<script src="static/js/jquery-2.2.1.min.js"></script>
+<script>
+    $(function(){
+        $(".close").click(function(){
+            $(".advertise").css("display","none");
+        });
+    });
+</script>
+</body>
+
+</html>

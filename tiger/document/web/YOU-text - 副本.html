@@ -1,0 +1,68 @@
+﻿<table class="user_info">
+						<tr>
+							<td style="border-right:1px solid #A6C8FF;">预计发布日期</td>
+							<td style="border:1px solid #A6C8FF;"><input type="text" onFocus="WdatePicker()" name="time" /></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>发布类别</td>
+							<!--<td><input type="text" value="系统公告/活动公告"/></td>-->
+                            <td style="border-bottom:1px solid #A6C8FF">
+                                <select name="title">
+                                    <option value="系统公告">系统公告</option>
+                                    <option value="活动公告">活动公告</option>
+                                </select>
+                            </td>
+							<td style="border-bottom:1px solid #A6C8FF"></td>
+							<td style="border-bottom:1px solid #A6C8FF"></td>
+						</tr>
+						<tr class="mess_notice">
+                                <td style="border-right:1px solid #A6C8FF;">信息1000字以内</td>
+                                <td  colspan="4" style="border:1px solid #A6C8FF;">
+                                    <textarea name="content" style="text-align: left;width:98%;height:90%"></textarea>
+							</td>
+                        </tr>
+						<tr>
+							<td colspan ="4"><a class="file"><input type="file" name="file" class="photo" onchange="previewFile(this)"/>选择图片</a></td>
+						</tr>
+						<tr class="mess_notice">
+							<td style="border-right:1px solid #A6C8FF;">图片预览</td>
+							<td  colspan="4" style="border:1px solid #A6C8FF;">
+								<img src="" id="img" width='95%' />
+							</td>
+						</tr>
+						<tr>
+							<td style="border-right:1px solid #A6C8FF;">图片url</td>
+							<td  colspan="4" style="border:1px solid #A6C8FF;">
+								<input type="text" />
+							</td>
+						</tr>
+					</table>
+					<div class="new_add_shop clear" style="position:relative">
+						<div class="add_logo">+</div>
+						<div class="add_txt">新增图片</div>
+					</div>
+
+ <script src="static/js/jquery-2.2.1.min.js"></script>
+ <script>
+     $(document).ready(function(){
+       var tr="<tr><td colspan='4'><a class='file'><input type='file' name='file' class='photo' onchange='previewFile(this)'/>选择图片</a></td>" +
+           "</tr><tr class='mess_notice'> <td style='border-right:1px solid #a6c8ff;'>图片预览</td> " +
+           "<td colspan='4' style='border:1px solid #A6C8FF;'><img src='' id='img' width='95%'/> </td> </tr> " +
+           "<tr> <td style='border-right:1px solid #A6C8FF;'>图片url</td> " +
+           "<td  colspan='4' style='border:1px solid #A6C8FF;'> <input type='text' /> </td> </tr>";
+       var num=0;
+    $(".new_add_shop").click(function(){
+        num++;
+        if (num<3){
+            console.log(num);
+            $(".user_info").append(tr);
+        }else {
+            alert("最多只能添加三张图片");
+        }
+
+   })
+});
+
+</script>

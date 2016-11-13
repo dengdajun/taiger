@@ -1,0 +1,128 @@
+
+
+
+/*最新消息*/
+.notice{
+    background: url("../img/notice-bg.png");
+    background-size: 90%;
+}
+ul.line{
+    height: 30px;
+    overflow: hidden;
+}
+ul.line span{
+    color: #b60005;
+    padding:  4px 0 4px 24px;
+    background: url("../img/notice.png") no-repeat;
+    background-size: 24px ;
+    float: left;
+}
+ul.line li{
+    height:26px;
+    text-indent:15px;
+    font-size:12px;
+    line-height:26px;
+    margin-left: 80px;
+}
+/*内容*/
+article .text{
+    margin: 24px 0;
+    font-size: 16px;
+    color: #333;
+}
+article aside{
+    width: 45%;
+    height: 300px;
+    float: left;
+    margin-right: 7%;
+    margin-bottom: 4%;
+    text-align: center;
+}
+article .main>aside:nth-child(2n){
+    margin-right: 0;
+}
+article aside{
+    background: #F4EED9;
+
+}
+.aside img{
+    width: 80%;
+    margin-top: 46px;
+}
+.aside p{
+    margin-top: 30px;
+}
+.aside p a{
+    color: #E88E3B;
+    background: #F8D8A5;
+    border: 2px solid #9E9F9F;
+    border-radius: 4px;
+    padding: 4px 6px;
+    margin-left: 4px;
+}
+.aside2{
+    background: #ffffff;
+}
+.aside2 video{
+    width: 100%;
+    height: 100%;
+}
+.aside3{
+    background: url("../img/teacher.png") no-repeat;
+    background-size: 100%;
+}
+.aside3 h2{
+    color: #D95B00;
+    font-size: 18px;
+    margin-top:54px;
+}
+.aside3 p{
+    width: 60%;
+    text-indent: 1em;
+    font-size: 12px;
+    text-align: left;
+    line-height: 22px;
+    margin-left: 25px;
+}
+.aside6 img{
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+}
+.aside8 img{
+    width: 70%;
+}
+.aside8 p{
+    width: 86%;
+    text-align: left;
+    margin: 6px auto;
+    line-height: 20px;
+}
+.aside8 p span,.aside8 span{
+    color: #DB5E01;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.aside8 .contact{
+    width: 54px;
+    height: 46px;
+    background: url("../img/contact.png") no-repeat;
+    background-size: 100px 36px;
+    background-position: 0 4px;
+    /*border:1px solid red;*/
+    float: left;
+}
+.aside8 .contact2{
+    background-position: -53px 4px;
+    margin-left: 10px;
+}
+#contact{
+    width: 86%;
+    margin: 0 auto;
+}
+#contact span{
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+/*地图*/

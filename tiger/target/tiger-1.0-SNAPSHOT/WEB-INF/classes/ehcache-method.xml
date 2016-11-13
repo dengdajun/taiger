@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache>
+    <diskStore path="java.io.tmpdir/jeefw-ehcache1"/>
+
+    <defaultCache maxElementsInMemory="10000" eternal="false"
+                  overflowToDisk="true" timeToIdleSeconds="300" timeToLiveSeconds="180"
+                  diskPersistent="false" diskExpiryThreadIntervalSeconds="120"/>
+
+    <cache name="org.hibernate.cache.internal.StandardQueryCache"
+           maxElementsInMemory="1000" eternal="false" timeToLiveSeconds="120"
+           overflowToDisk="true"/>
+    <cache name="org.hibernate.cache.spi.UpdateTimestampsCache"
+           maxElementsInMemory="5000" eternal="true" overflowToDisk="true"/>
+    <cache name="com.guardian_angel.service.sys.impl" maxElementsInMemory="10000" eternal="false" timeToLiveSeconds="3"
+           overflowToDisk="false"/>
+
+    <cache name="com.guardian_angel.service.sys.impl.getTypeLeaf" maxElementsInMemory="10000" eternal="false"
+           timeToLiveSeconds="3"
+           overflowToDisk="false"/>
+
+    <cache name="all" maxElementsInMemory="10000" eternal="false"
+           overflowToDisk="true" timeToIdleSeconds="120" timeToLiveSeconds="120"
+           diskPersistent="false" diskExpiryThreadIntervalSeconds="120"/>
+</ehcache>
+<xml>
+<appid><![CDATA[wx2f2ac93c5cb0e910]]></appid>
+<attach>040117030645560</attach>
+<body><![CDATA[23423]]></body>
+<mch_id>1312354801</mch_id>
+<nonce_str><![CDATA[2b719b5aa2164ba283c39506e9b96d50]]></nonce_str>
+<notify_url><![CDATA[http://www.xxxx.com/wxtest/test/pay.jsp]]></notify_url>
+<out_trade_no>040117030645560</out_trade_no>
+<sign><![CDATA[C5D9D1E221DE011A3CF1817BB31D82AA]]></sign>
+<spbill_create_ip><![CDATA[192.168.0.123]]></spbill_create_ip>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[APP]]></trade_type>
+</xml>

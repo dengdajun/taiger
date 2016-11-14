@@ -26,6 +26,9 @@
                 <a href="${ctx}/system/tiger/news">News</a>
             </li>
             <li>
+                <a href="${ctx}/system/tiger/branch">Branch</a>
+            </li>
+            <li>
                 <a href="${ctx}/system/tiger/videos">Videos</a>
             </li>
         </ul>

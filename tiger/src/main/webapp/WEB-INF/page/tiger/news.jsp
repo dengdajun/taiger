@@ -69,7 +69,7 @@
                     <div class="page">
                         <div id="Pagination"></div>
                         <div class="searchPage">
-                            <span class="page-sum">共<strong class="allPage">15</strong>页</span>
+                            <span class="page-sum">共<strong class="allPage">${news%5==0?news/5:news/5+1}</strong>页</span>
                             <span class="page-go">去第<input type="text" />页</span>
                             <a href="javascript:;" class="page-btn">确定</a>
                         </div>

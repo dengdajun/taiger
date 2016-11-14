@@ -2,6 +2,7 @@ package org.tiger.controller;
 
 import org.apache.commons.lang.StringUtils;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.tiger.entity.*;
 import org.tiger.service.*;
 import org.springframework.stereotype.Controller;
@@ -32,6 +33,8 @@ public class TigerController implements Constant {
     AttachmentService attachmentService;
     @Resource
     QQAdvertisementService qqAdvertisement;
+    @Resource
+    private BranchSchoolService branchSchoolService;
 
     @RequestMapping(value = "/index", method = {RequestMethod.GET, RequestMethod.POST})
     public ModelAndView Index(ModelAndView mv, HttpServletRequest request) {
@@ -47,8 +50,6 @@ public class TigerController implements Constant {
             }
 
         }
-        QQAdvertisement qq= qqAdvertisement.doQueryAll().get(0);
-        mv.addObject("qqAdvertisement",null==qq?new QQAdvertisement():qq);
         mv.addObject("news",news);
         mv.setViewName("tiger/index");
         return mv;
@@ -154,6 +155,20 @@ public class TigerController implements Constant {
     @RequestMapping(value = "/us-course-con", method = {RequestMethod.GET, RequestMethod.POST})
     public ModelAndView UsCourseCon(ModelAndView mv) {
         mv.setViewName("tiger/us-course-con");
+        return mv;
+    }
+
+    @RequestMapping(value = "/branch", method = {RequestMethod.GET, RequestMethod.POST})
+    public ModelAndView branch(ModelAndView mv) {
+        List<BranchSchool> branchSchools=branchSchoolService.doQueryAll();
+        mv.addObject("branch",branchSchools);
+        mv.setViewName("tiger/us");
+        return mv;
+    }
+    @ModelAttribute
+    public ModelAndView advertise(ModelAndView mv) {
+        QQAdvertisement qq= qqAdvertisement.doQueryAll().get(0);
+        mv.addObject("qqAdvertisement",null==qq?new QQAdvertisement():qq);
         return mv;
     }
 }

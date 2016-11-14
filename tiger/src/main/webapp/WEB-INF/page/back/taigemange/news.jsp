@@ -60,6 +60,41 @@
 					</div>
 				</div>
 			</div><!-- /.modal-content -->
+			<div class="modal-content-open">
+				<div class="modal-header no-padding">
+					<div class="table-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							<span class="white">&times;</span>
+						</button>
+						关联开班
+					</div>
+				</div>
+				<div class="modal-body" style="max-height: 450px;overflow-y: scroll;">
+					<div id="modal-tip" class="red clearfix"></div>
+					<input id="roleKeyId" type="hidden" />
+					<div class="widget-box widget-color-blue2">
+						<div class="widget-body">
+							<div class="widget-main padding-8">
+									<span class="profile-picture">
+										<img id="avatar1" class="editable img-responsive" alt="Alex's Avatar" src="${contextPath}/${banner1.filePath}" />
+									</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer no-margin-top">
+					<div class="text-center">
+						<button id="submitButton" type="submit" class="btn btn-app btn-success btn-xs">
+							<i class="ace-icon fa fa-floppy-o bigger-160"></i>
+							保存
+						</button>
+						<button class="btn btn-app btn-pink btn-xs" data-dismiss="modal">
+							<i class="ace-icon fa fa-share bigger-160"></i>
+							取消
+						</button>
+					</div>
+				</div>
+			</div><!-- /.modal-content -->
 		</form>
 	</div><!-- /.modal-dialog -->
 </div>
@@ -155,8 +190,17 @@
         				sortable : false,
 						editable : true,
 						edittype : "select",
-						editoptions : {value : "battlefield:战报;"},
+						editoptions : {value : "battlefield:战报;开课:openclass;优惠:sale"},
         			},{
+							name : 'photo',
+							index : 'photo',
+							label : '链接开班',
+							width : 60,
+							editable : false,
+							search : false,
+							sortable : false,
+							formatter : authorityOpen
+					} ,{
 					name : 'photo',
 							index : 'photo',
 							label : '配图',
@@ -226,7 +270,10 @@
         			var template = "<button data-toggle='modal' onclick='javascript:$(\"#modal-table\").modal(\"toggle\");$(\"#roleKeyId\").val(\"" + cell.id +"\")' class='btn btn-xs btn-warning'><i class='ace-icon fa fa-flag bigger-120'></i></button>";
         			return template;
         		}
-        		
+				function authorityOpen(cellvalue, options, cell) {
+					var template = "<button data-toggle='modal' onclick='javascript:$(\"#modal-content-open\").modal(\"toggle\");$(\"#roleKeyId\").val(\"" + cell.id +"\")' class='btn btn-xs btn-warning'><i class='ace-icon fa fa-flag bigger-120'></i></button>";
+					return template;
+				}
         		var treeflag = 0;
         		$("#modal-table").on('shown.bs.modal', function() {
         			var remoteDateSource = function(options, callback) {

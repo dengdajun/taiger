@@ -92,7 +92,7 @@ public class NewsController extends BaseController implements ApiConstant,Consta
 
     }
     private static SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-    @RequestMapping(value = "/editNews", method = {RequestMethod.POST})
+    @RequestMapping(value = "/editNews", method = {RequestMethod.POST,RequestMethod.GET})
     public void editData(HttpServletRequest request, HttpServletResponse response
                          ) throws Exception{
         JSONObject json = new JSONObject();
